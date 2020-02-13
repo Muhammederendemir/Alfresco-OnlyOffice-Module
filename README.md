@@ -23,6 +23,8 @@ area
     "$references": ["aos.plugin.json","onlyoffice.plugin.json"],
 
 Let's change to.
+
+
 ##3. Step : in the  src/app/extensions.module.ts
 
 
@@ -35,6 +37,8 @@ will be imported and
        })
   
 will be changed to
+
+
 ##4. Step : in the  src/assets/app.extensions.json
   
     "$references": ["aos.plugin.json", "app.header.json"],
@@ -43,6 +47,8 @@ will be changed to
    
     "$references": ["aos.plugin.json","onlyoffice.plugin.json", "app.header.json"],
 Let's change to.
+
+
 ##5. Step : into assets in angular.json
         {
         "glob": "**/*",
@@ -104,6 +110,8 @@ will be added and
        },
 
  It will be added.
+
+
  ##6. Step : in the package.json
     "build:onlyoffice-extension": "npx rimraf dist/@alfresco/adf-onlyoffice-services-ext && ng build adf-onlyoffice-services-ext && cpr projects/adf-onlyoffice-services-ext/ngi.json dist/@alfresco/adf-onlyoffice-services-ext/ngi.json && cpr projects/adf-onlyoffice-services-ext/assets dist/@alfresco/adf-onlyoffice-services-ext/assets",
     
@@ -111,6 +119,8 @@ after added
      
     "build.extensions": "npm run build:aos-extension && npm run build:onlyoffice-extension",
 the area will be arranged this way.
+
+
 ##7. Step : into paths: in tsconfig.json
       
        "@alfresco/adf-onlyoffice-services-ext": [
@@ -121,7 +131,11 @@ the area will be arranged this way.
        ],
 
 Let's add
+
+
 ##8. Step : Let's start building the OnlyOffice component.  Let's add the Onlyoffice folder to src/app/component.
+
+
 ##9. Step : into app.routes.ts in src/app
 
       
@@ -133,9 +147,15 @@ Let's add
        },  
   
 Let's add
+
+
 ##10.Step : projects/adf-onlyoffice-services-ext/src/lib/aos-extension.service.ts
  The url fields in the localhost must be the Onlyoffice installed url.
+
+
 ##11. Step: OnlyOffice module and component have been added.
+
+
 ##Developers
 
   Muhammed Eren Demir 
