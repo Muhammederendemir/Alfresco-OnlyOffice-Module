@@ -1,4 +1,4 @@
-#Adding Onlyoffice modules to Alfresco
+##Adding Onlyoffice modules to Alfresco
 
 ## 1.Step : Let's add the adf-onlyoffice-services-ext folder to the project
 
