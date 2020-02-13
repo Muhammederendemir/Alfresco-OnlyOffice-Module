@@ -1,4 +1,4 @@
-##Adding Onlyoffice modules to Alfresco
+## Adding Onlyoffice modules to Alfresco
 
 ## 1.Step : Let's add the adf-onlyoffice-services-ext folder to the project
 
@@ -13,7 +13,7 @@ area
 
 Let's change to.
 
-b.viewer-ext.json
+    b.viewer-ext.json
 
 
     "$references": ["aos.plugin.json"],
@@ -25,7 +25,7 @@ area
 Let's change to.
 
 
-##3. Step : in the  src/app/extensions.module.ts
+## 3. Step : in the  src/app/extensions.module.ts
 
 
      import { OnlyofficeExtensionModule } from '@alfresco/adf-onlyoffice-services-ext';
@@ -39,7 +39,7 @@ will be imported and
 will be changed to
 
 
-##4. Step : in the  src/assets/app.extensions.json
+## 4. Step : in the  src/assets/app.extensions.json
   
     "$references": ["aos.plugin.json", "app.header.json"],
 
@@ -49,7 +49,7 @@ will be changed to
 Let's change to.
 
 
-##5. Step : into assets in angular.json
+## 5. Step : into assets in angular.json
         {
         "glob": "**/*",
         "input": "node_modules/@alfresco/adf-onlyoffice-services-ext/assets",
@@ -112,7 +112,7 @@ will be added and
  It will be added.
 
 
- ##6. Step : in the package.json
+ ## 6. Step : in the package.json
     "build:onlyoffice-extension": "npx rimraf dist/@alfresco/adf-onlyoffice-services-ext && ng build adf-onlyoffice-services-ext && cpr projects/adf-onlyoffice-services-ext/ngi.json dist/@alfresco/adf-onlyoffice-services-ext/ngi.json && cpr projects/adf-onlyoffice-services-ext/assets dist/@alfresco/adf-onlyoffice-services-ext/assets",
     
 after added
@@ -121,7 +121,7 @@ after added
 the area will be arranged this way.
 
 
-##7. Step : into paths: in tsconfig.json
+## 7. Step : into paths: in tsconfig.json
       
        "@alfresco/adf-onlyoffice-services-ext": [
         "dist/@alfresco/adf-onlyoffice-services-ext"
@@ -133,10 +133,10 @@ the area will be arranged this way.
 Let's add
 
 
-##8. Step : Let's start building the OnlyOffice component.  Let's add the Onlyoffice folder to src/app/component.
+## 8. Step : Let's start building the OnlyOffice component.  Let's add the Onlyoffice folder to src/app/component.
 
 
-##9. Step : into app.routes.ts in src/app
+## 9. Step : into app.routes.ts in src/app
 
       
        {
@@ -149,14 +149,14 @@ Let's add
 Let's add
 
 
-##10.Step : projects/adf-onlyoffice-services-ext/src/lib/aos-extension.service.ts
+## 10.Step : projects/adf-onlyoffice-services-ext/src/lib/aos-extension.service.ts
  The url fields in the localhost must be the Onlyoffice installed url.
 
 
-##11. Step: OnlyOffice module and component have been added.
+## 11. Step: OnlyOffice module and component have been added.
 
 
-##Developers
+## Developers
 
   Muhammed Eren Demir 
  
