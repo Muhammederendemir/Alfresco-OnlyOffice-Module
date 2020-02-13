@@ -1,0 +1,20 @@
+{
+  "assets": [
+    {
+      "glob": "**/*",
+      "input": "./assets",
+      "output": "./assets/adf-onlyoffice-services-ext"
+    },
+    {
+      "glob": "onlyoffice.plugin.json",
+      "input": "./assets",
+      "output": "./assets/plugins"
+    }
+  ],
+  "modules": [
+    {
+      "name": "OnlyofficeExtensionModule",
+      "namespace": "@alfresco/adf-onlyoffice-services-ext"
+    }
+  ]
+}

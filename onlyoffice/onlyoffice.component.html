@@ -1,0 +1,27 @@
+<aca-page-layout>
+  <aca-page-layout-content>
+    <div style="position: absolute; padding-top: 10px; width: 100%;">
+      <div style="float: left;  width: 40%;">
+        <span class="mat-button-wrapper" (click)="this.close()">
+          <mat-icon
+            class=" mat-icon notranslate material-icons mat-icon-no-color icon-style"
+            role="img"
+            aria-hidden="true"
+          >
+            chevron_left
+          </mat-icon>
+        </span>
+      </div>
+      <div class="">
+        <p class="onlyoffice-text">
+          {{ 'AOS.APP_TITLE_ONLYOFFICE' | translate }}
+        </p>
+      </div>
+    </div>
+
+    <div style=" width:100%;margin-top: 56px">
+      <div id="placeholder"></div>
+    </div>
+    {{ this.call() }}
+  </aca-page-layout-content>
+</aca-page-layout>

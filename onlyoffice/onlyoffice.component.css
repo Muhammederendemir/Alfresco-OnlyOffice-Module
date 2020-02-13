@@ -1,0 +1,50 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  background: #fff;
+  color: #333;
+  font-family: Arial, Tahoma, sans-serif;
+  font-size: 12px;
+  font-weight: normal;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+form {
+  height: 100%;
+}
+
+div {
+  margin: 0;
+  padding: 0;
+}
+
+.icon-style {
+  font-size: 28px;
+  text-align: center;
+  padding-top: 2px;
+  margin-left: 9px;
+  margin-top: 9px;
+  cursor: pointer;
+  width: 33px;
+  height: 30px;
+  border-radius: 50%;
+  background: #e4e4e4;
+  transition: 0.3s;
+}
+
+.icon-style:hover {
+  box-shadow: 0px 0px 5px 1px rgb(184, 184, 184);
+}
+
+.onlyoffice-text {
+  font-weight: 600;
+  position: absolute;
+  left: 55px;
+  padding-top: 2px;
+}
